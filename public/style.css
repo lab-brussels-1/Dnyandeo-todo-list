@@ -1,0 +1,128 @@
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    list-style: none;
+}
+
+.main{
+    max-width: 70%;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1, inset -3px -3px 7px #fff,
+    inset 3px 3px 5px #ceced1;
+    padding: 1rem;
+}
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+    padding: .5rem;
+    color: rgb(254, 182, 88);
+    width: fit-content;
+    margin: auto;
+    
+}
+
+.list{
+    text-align: center;
+    
+}
+
+.list input {
+    width: 15rem;
+    padding: .7rem;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1, inset -3px -3px 7px #fff,
+    inset 3px 3px 5px #ceced1;
+    border-color: white; 
+}
+
+.submit-btn{
+    text-align: center;
+
+}
+
+
+.btn{
+    padding: .5rem;
+    width: 6rem;
+    margin: 1rem 0 3rem ;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    color: gray;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1, inset -3px -3px 7px #fff;
+    /* inset 3px 3px 5px #ceced1; */
+    border-color: white;
+    border-radius: .3rem;
+}
+
+.btn:hover{
+    color: black;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1, inset -3px -3px 7px #fff,
+    inset 3px 3px 5px #ceced1;
+}
+
+
+.btn i{
+    font-size: 1rem;
+    padding-right: .4rem;
+    color: green;
+}
+
+
+.output{
+    max-width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.user-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+    background-color: aliceblue;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1, inset -3px -3px 7px #fff,
+    inset 3px 3px 5px #ceced1;
+}
+
+.user{
+    padding: .7rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    color: gray;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1, inset -3px -3px 7px #fff,
+    inset 3px 3px 5px #ceced1;
+    border-radius: 1rem;
+}
+
+.name {
+    text-transform: capitalize;
+    color: darkorange;
+}
+
+.email{
+    color: blue;
+}
+
+.phone{
+    color: darkmagenta;
+}
+
+.edit-btn, .delete-btn {
+    margin: 1rem;
+}
+
+.btns .icon2{
+    color: red;
+}
+
+.btns .icon3{
+    color: gray;
+}

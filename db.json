@@ -1,16 +1,11 @@
 {
   "todos": [
     {
-      "id" : 1,
-      "title" : "learn react",
-      "completed" :  false
-
-    },
-    {
-      "id" : 2,
-      "title" : "go to doctor",
-      "completed" :  false
-
+      "name": "dnyandeo waghunde",
+      "email": "dnyanu.waghunde@gmail.com",
+      "phone": "66666666",
+      "completed": false,
+      "id": 1
     }
   ]
 }
