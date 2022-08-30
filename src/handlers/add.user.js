@@ -16,7 +16,7 @@ export const getInformation = async () => {
         });
         if (res.status == 201) {
                     const data = await res.json();
-                    userOut.innerHTML = `<div class="user-list">
+                    userOut.innerHTML += `<div class="user-list">
                                                 <ul class="user">
                                                 <li class="name">${data.name}</li>
                                                 <li class="email">${data.email}</li>
