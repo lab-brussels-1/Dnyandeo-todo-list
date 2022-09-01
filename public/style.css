@@ -75,43 +75,38 @@
 
 
 .output{
-    max-width: 40%;
+    max-width: 50%;
     margin: auto;
     text-align: center;
 }
 
 
 .user-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-top: 1rem;
-    
+    padding-top: 1rem;
     background-color: aliceblue;
     box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1, inset -3px -3px 7px #fff,
     inset 3px 3px 5px #ceced1;
 }
 
-.user{
-    padding: .7rem;
-    margin: 1rem auto;
-    font-size: 1.2rem;
-    color: gray;
-    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1, inset -3px -3px 7px #fff,
-    inset 3px 3px 5px #ceced1;
-    border-radius: 1rem;
-}
-
 .name {
     text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
     color: darkorange;
 }
 
 .email{
+    padding-top: .2rem;
+    font-size: 1.5rem;
     color: blue;
 }
 
 .phone{
+    padding-top: .3rem;
+    font-size: 1.5rem;
     color: darkmagenta;
 }
 
@@ -119,10 +114,10 @@
     margin: 1rem;
 }
 
-.btns .icon2{
+.user-list .icon2{
     color: red;
 }
 
-.btns .icon3{
+.user-list .icon3{
     color: gray;
 }

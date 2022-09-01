@@ -1,11 +1,18 @@
 {
   "todos": [
     {
-      "name": "dnyandeo waghunde",
+      "name": "Dnyandeo waghunde",
       "email": "dnyanu.waghunde@gmail.com",
-      "phone": "66666666",
+      "phone": "0491567865",
       "completed": false,
       "id": 1
+    },
+    {
+      "name": "ved waghunde",
+      "email": "dnyanu.waghunde@gmail.com",
+      "phone": "0491567865",
+      "completed": false,
+      "id": 2
     }
   ]
 }
