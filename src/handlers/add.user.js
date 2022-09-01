@@ -1,6 +1,5 @@
 import { INPUT_NAME, INPUT_EMAIL, INPUT_PHONE, OUTPUT } from "../data/constant.js";
 import { urlApi } from "../Api/api.js";
-import { removeUser } from "./delete-user.js";
 
 
 export const getInformation = async () => {
@@ -68,15 +67,9 @@ export const getInformation = async () => {
             deleteIcon.classList.add('icon2', 'fa-solid', 'fa-trash');
             deleteBtn.appendChild(deleteIcon);
             container.appendChild(deleteBtn);
-
-            deleteBtn.addEventListener(MOUSE_CLICK, () => {
-                debugger
-                removeUser();
-                container.remove();
-            });
-
         }
     } catch (error) {
+        console.log(error)
     }
 };
 
