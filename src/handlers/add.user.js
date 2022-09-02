@@ -10,6 +10,10 @@ export const getInformation = async () => {
         const userPhone = document.getElementById(INPUT_PHONE).value;
 
         const userOut = document.getElementById(OUTPUT);
+        
+        while(userOut.firstChild){
+            userOut.firstChild.remove()
+        }
 
         const res = await fetch(urlApi, {
             method: 'POST',

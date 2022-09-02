@@ -1,13 +1,17 @@
-import { OUTPUT } from "../data/constant.js"
+import { DELETE_USER, OUTPUT } from "../data/constant.js"
 import { getUsersAll } from "../handlers/get-user.js";
 import { removeUser } from "../handlers/delete-user.js"
 
 
 export const showAllUser = async () => {
+    
     const userAll = await getUsersAll()
     userAll.forEach(user => {
         const userOut = document.getElementById(OUTPUT);
 
+        while(userOut.firstChild){
+            userOut.firstChild.remove()
+        }
         // create div element with user-list class
 
         const container = document.createElement('div');
