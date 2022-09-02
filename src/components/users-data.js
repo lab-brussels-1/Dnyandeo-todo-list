@@ -1,69 +1,62 @@
-import { DELETE_USER, OUTPUT } from "../data/constant.js"
-import { getUsersAll } from "../handlers/get-user.js";
 import { removeUser } from "../handlers/delete-user.js"
+import { OUTPUT } from "../data/constant.js";
 
+const userOut = document.getElementById(OUTPUT);
 
-export const showAllUser = async () => {
-    
-    const userAll = await getUsersAll()
-    userAll.forEach(user => {
-        const userOut = document.getElementById(OUTPUT);
+// create element throw DOM
 
-        while(userOut.firstChild){
-            userOut.firstChild.remove()
-        }
-        // create div element with user-list class
+export const userComponent = (data) => {
 
-        const container = document.createElement('div');
-        container.classList.add('user-list')
-        // create first p element for name
-        const pNameEl = document.createElement('p');
-        pNameEl.classList.add('name');
-        pNameEl.textContent = user.name;
-        container.appendChild(pNameEl);
+    // create div element with data-list class
 
-        // create second p element for email
+    const container = document.createElement('div');
+    container.classList.add('user-list')
 
-        const pEmailEl = document.createElement('p');
-        pEmailEl.classList.add('email');
-        pEmailEl.textContent = user.email;
-        container.appendChild(pEmailEl);
+    // create first p element for name
 
-        // create third p element for phone
+    const pNameEl = document.createElement('p');
+    pNameEl.classList.add('name');
+    pNameEl.textContent = data.name;
+    container.appendChild(pNameEl);
 
-        const pPhoneEl = document.createElement('p');
-        pPhoneEl.classList.add('phone');
-        pPhoneEl.textContent = user.phone;
-        container.appendChild(pPhoneEl);
-        userOut.append(container);
+    // create second p element for email
 
-        // create first button for edit 
+    const pEmailEl = document.createElement('p');
+    pEmailEl.classList.add('email');
+    pEmailEl.textContent = data.email;
+    container.appendChild(pEmailEl);
 
-        const editBtn = document.createElement('button')
-        editBtn.classList.add('btn', 'edit-btn');
-        editBtn.setAttribute('id', 'edit-btn');
-        const editIcon = document.createElement('i');
-        editIcon.classList.add('icon3', 'fa-solid', 'fa-pen-to-square');
-        editBtn.appendChild(editIcon);
-        container.appendChild(editBtn);
+    // create third p element for phone
 
-        // create second button for delete
+    const pPhoneEl = document.createElement('p');
+    pPhoneEl.classList.add('phone');
+    pPhoneEl.textContent = data.phone;
+    container.appendChild(pPhoneEl);
+    userOut.append(container);
 
-        const deleteBtn = document.createElement('button')
-        deleteBtn.classList.add('btn', 'delete-btn');
-        deleteBtn.setAttribute('id', 'delete-btn');
-        // deleteBtn.setAttribute('onclick', {removeUser});
-        const deleteIcon = document.createElement('i');
-        deleteIcon.classList.add('icon2', 'fa-solid', 'fa-trash');
-        deleteBtn.appendChild(deleteIcon);
-        container.appendChild(deleteBtn);
+    // create first button for edit 
 
+    const editBtn = document.createElement('button')
+    editBtn.classList.add('btn', 'edit-btn');
+    editBtn.setAttribute('id', 'edit-btn');
+    const editIcon = document.createElement('i');
+    editIcon.classList.add('icon3', 'fa-solid', 'fa-pen-to-square');
+    editBtn.appendChild(editIcon);
+    container.appendChild(editBtn);
 
-        deleteBtn.addEventListener("click", function () {
-            removeUser(user.id)
-            container.remove();
-        });
-    })
-};
+    // create second button for delete
 
+    const deleteBtn = document.createElement('button')
+    deleteBtn.classList.add('btn', 'delete-btn');
+    deleteBtn.setAttribute('id', 'delete-btn');
+    const deleteIcon = document.createElement('i');
+    deleteIcon.classList.add('icon2', 'fa-solid', 'fa-trash');
+    deleteBtn.appendChild(deleteIcon);
+    container.appendChild(deleteBtn);
+
+    deleteBtn.addEventListener("click", ()=> {
+        removeUser(data.id)
+        UserInfo.remove();
+    });
+}
 

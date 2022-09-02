@@ -1,4 +1,5 @@
 import { urlApi } from "../Api/api.js";
+import { userComponent } from "../components/users-data.js"
 
 
 
@@ -13,4 +14,14 @@ export const getUsersAll = async () => {
     } catch (error) {
         console.log(error)
     }
-}
+};
+
+
+export const showAllUser = async () => {
+    const userAll = await getUsersAll()
+    userAll.forEach(user => {
+        const UserInfo = userComponent(user);
+    })
+};
+
+

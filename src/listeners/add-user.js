@@ -1,4 +1,4 @@
-import { ADD, INPUT_NAME, MOUSE_CLICK } from "../data/constant.js";
+import { ADD, MOUSE_CLICK } from "../data/constant.js";
 import { getInformation } from "../handlers/add.user.js"
 
 export const addUser = () => {

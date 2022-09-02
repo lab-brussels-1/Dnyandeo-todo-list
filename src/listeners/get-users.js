@@ -1,5 +1,5 @@
 import {GET, MOUSE_CLICK } from "../data/constant.js";
-import { showAllUser } from "../components/users-data.js";
+import { showAllUser } from "../handlers/get-user.js";
 
 
 export const getUsers = () =>{
