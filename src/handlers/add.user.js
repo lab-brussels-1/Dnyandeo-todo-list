@@ -27,5 +27,3 @@ export const getInformation = async () => {
         console.log(error)
     }
 };
-
-export default getInformation;

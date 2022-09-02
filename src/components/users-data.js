@@ -1,5 +1,7 @@
 import { removeUser } from "../handlers/delete-user.js"
+import {updateInfo} from "../handlers/edit-user.js"
 import { OUTPUT } from "../data/constant.js";
+import { INPUT_NAME, INPUT_EMAIL, INPUT_PHONE } from "../data/constant.js";
 
 // create element throw DOM
 
@@ -54,8 +56,15 @@ export const userComponent = (data) => {
 
     deleteBtn.addEventListener("click", () => {
         removeUser(data.id)
-        UserInfo.remove();
+        UserInfo.remove();    
     });
-}
 
-export default userComponent;
+    editBtn.addEventListener('click', ()=>{
+        const userName = document.getElementById(INPUT_NAME)
+        userName.value = data.name;
+        const userEmail = document.getElementById(INPUT_EMAIL)
+        userEmail.value = data.email;
+        const userPhone = document.getElementById(INPUT_PHONE)
+        userPhone.value = data.phone
+    })
+}

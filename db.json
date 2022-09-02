@@ -1,3 +1,18 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "name": "veena waghunde",
+      "email": "nawleveena378@gmail.com",
+      "phone": "555555555",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "name": "veena ",
+      "email": "nawleveena378@gmail.com",
+      "phone": "555555555",
+      "completed": false,
+      "id": 3
+    }
+  ]
 }

@@ -16,7 +16,4 @@ export const removeUser = async (id) =>{
     } catch (error) {
         console.error(error);
     }
-}
-
-
-export default removeUser;
+};

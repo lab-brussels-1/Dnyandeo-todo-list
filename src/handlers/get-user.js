@@ -23,5 +23,3 @@ export const showAllUser = async () => {
         userComponent(user);
     })
 };
-
-export default getUsersAll;
