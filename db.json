@@ -1,11 +1,5 @@
 {
   "todos": [
-    {
-      "name": "Dnyandeo waghunde",
-      "email": "dnyanu.waghunde@gmail.com",
-      "phone": "12345678",
-      "completed": false,
-      "id": 2
-    }
+
   ]
 }
