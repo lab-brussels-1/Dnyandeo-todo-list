@@ -27,11 +27,6 @@ export const getInformation = async () => {
             if (res.status == 201) {
                 const data = await res.json();
                 userComponent(data);
-
-                userName.value = '';
-                userEmail.value = '';
-                userPhone.value = '';
-
             } else {
                 console.log(`Something went wrong, Status code:${res.status}`)
             }

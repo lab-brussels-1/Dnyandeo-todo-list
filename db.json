@@ -6,6 +6,13 @@
       "phone": "0491567865",
       "completed": false,
       "id": 1
+    },
+    {
+      "name": "Dnyandeo waghunde",
+      "email": "dnyanu.waghunde@gmail.com",
+      "phone": "5555555",
+      "completed": false,
+      "id": 2
     }
   ]
 }
