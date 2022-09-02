@@ -2,7 +2,7 @@ import { urlApi } from "../Api/api.js";
 
 export const removeUser = async (id) =>{
     try {
-        const res = fetch(`${urlApi}/${id}`, {
+        const res = await fetch(`${urlApi}/${id}`, {
             method: "DELETE",
         });
         if(res.status != 200){

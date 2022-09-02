@@ -1,5 +1,6 @@
 import { OUTPUT } from "../data/constant.js"
 import { getUsersAll } from "../handlers/get-user.js";
+import { removeUser } from "../handlers/delete-user.js"
 
 
 export const showAllUser = async () => {
@@ -47,10 +48,17 @@ export const showAllUser = async () => {
         const deleteBtn = document.createElement('button')
         deleteBtn.classList.add('btn', 'delete-btn');
         deleteBtn.setAttribute('id', 'delete-btn');
+        // deleteBtn.setAttribute('onclick', {removeUser});
         const deleteIcon = document.createElement('i');
         deleteIcon.classList.add('icon2', 'fa-solid', 'fa-trash');
         deleteBtn.appendChild(deleteIcon);
         container.appendChild(deleteBtn);
+
+
+        deleteBtn.addEventListener("click", function () {
+            removeUser(user.id)
+            container.remove();
+        });
     })
 };
 

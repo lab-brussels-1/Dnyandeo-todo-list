@@ -8,5 +8,5 @@ import{getUsers} from "./listeners/get-users.js";
 getUsers(document.getElementById(GET));
 
 
-import{deleteUser} from "./listeners/delete-user.js";
-deleteUser(document.getElementById(DELETE_USER));
+// import{deleteUser} from "./listeners/delete-user.js";
+// deleteUser(document.getElementById(DELETE_USER));
