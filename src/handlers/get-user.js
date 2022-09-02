@@ -20,8 +20,8 @@ export const getUsersAll = async () => {
 export const showAllUser = async () => {
     const userAll = await getUsersAll()
     userAll.forEach(user => {
-        const UserInfo = userComponent(user);
+        userComponent(user);
     })
 };
 
-
+export default getUsersAll;

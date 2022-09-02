@@ -1,5 +1,8 @@
 import { urlApi } from "../Api/api.js";
 
+
+// Remove user id from data
+
 export const removeUser = async (id) =>{
     try {
         const res = await fetch(`${urlApi}/${id}`, {
@@ -14,3 +17,6 @@ export const removeUser = async (id) =>{
         console.error(error);
     }
 }
+
+
+export default removeUser;

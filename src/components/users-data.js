@@ -1,12 +1,10 @@
 import { removeUser } from "../handlers/delete-user.js"
 import { OUTPUT } from "../data/constant.js";
 
-const userOut = document.getElementById(OUTPUT);
-
 // create element throw DOM
 
 export const userComponent = (data) => {
-
+    const userOut = document.getElementById(OUTPUT);
     // create div element with data-list class
 
     const container = document.createElement('div');
@@ -54,9 +52,10 @@ export const userComponent = (data) => {
     deleteBtn.appendChild(deleteIcon);
     container.appendChild(deleteBtn);
 
-    deleteBtn.addEventListener("click", ()=> {
+    deleteBtn.addEventListener("click", () => {
         removeUser(data.id)
         UserInfo.remove();
     });
 }
 
+export default userComponent;

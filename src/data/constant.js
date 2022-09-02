@@ -15,5 +15,4 @@ export const OUTPUT = 'output';
 
 export const ADD = 'add-btn';
 export const GET = 'get-btn'
-export const EDIT = 'edit-btn';
-export const DELETE_USER = 'delete-btn'
+
