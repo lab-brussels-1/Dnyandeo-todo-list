@@ -1,8 +1,15 @@
 {
   "todos": [
     {
-      "name": "Dnyandeo waghunde",
-      "email": "dnyanu.waghunde@gmail.com",
+      "name": "veena waghunde",
+      "email": "nawleveena378@gmail.com",
+      "phone": "0465306245",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "name": "veena waghunde",
+      "email": "nawleveena378@gmail.com",
       "phone": "0465306245",
       "completed": false,
       "id": 2
@@ -15,25 +22,11 @@
       "id": 3
     },
     {
-      "name": "Dnyandeo waghunde",
-      "email": "dnyanu.waghunde@gmail.com",
+      "name": "veena waghunde",
+      "email": "nawleveena378@gmail.com",
       "phone": "0465306245",
       "completed": false,
       "id": 4
-    },
-    {
-      "name": "Dnyandeo ",
-      "email": "dnyanu.waghunde@gmail.com",
-      "phone": "0465306245",
-      "completed": false,
-      "id": 5
-    },
-    {
-      "name": "Dnyandeo waghunde",
-      "email": "dnyanu.waghunde@gmail.com",
-      "phone": "0465306245",
-      "completed": false,
-      "id": 6
     }
   ]
 }

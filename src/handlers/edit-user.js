@@ -1,6 +1,6 @@
 import { INPUT_NAME, INPUT_EMAIL, INPUT_PHONE, ADD } from "../data/constant.js";
 import { urlApi } from "../Api/api.js";
-
+import { userComponent } from "../components/users-data.js"
 
 const add = document.getElementById(ADD);
 
