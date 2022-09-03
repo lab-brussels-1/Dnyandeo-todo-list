@@ -1,6 +1,7 @@
 import { INPUT_NAME, INPUT_EMAIL, INPUT_PHONE } from "../data/constant.js";
 import { urlApi } from "../Api/api.js";
 import { userComponent } from "../components/users-data.js"
+let inputs = document.querySelectorAll('input');
 
 // Add user data
 
@@ -30,9 +31,8 @@ export const getInformation = async () => {
             } else {
                 console.log(`Something went wrong, Status code:${res.status}`)
             }
-
+            inputs.forEach(input => input.value ='');
         }
-
     } catch (error) {
         console.log(error)
     }
