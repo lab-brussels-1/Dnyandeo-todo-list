@@ -15,20 +15,28 @@
         <h1 class="title">Todo User List</h1>
         <form action="">
             <div class="list">
-                <label for="name">Name</label>
-                <input id="input-name" type="text" placeholder="Enter name" name="name" required>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input id="input-name" type="text" placeholder="Enter name" name="name">
+                </form>
             </div>
             <div class="list">
-                <label for="email">Email</label>
-                <input id="input-email" type="email" placeholder="Enter email" name="email" required>
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="email" id="input-email" pattern=".+@globex\.com" placeholder="Enter email"
+                        name="email">
+                </form>
             </div>
             <div class="list">
-                <label for="phone">Phone</label>
-                <input id="input-phone" type="number" placeholder="Enter phone number" name="phone" required>
+                <form action="">
+                    <label for="phone">Phone</label>
+                    <input id="input-phone" type="number" placeholder="Enter phone number" name="phone">
+                </form>
             </div>
             <div class="submit-btn">
                 <button class="btn" type="button" id="add-btn"><i class="icon1 fa-solid fa-user-plus"></i>Add</button>
-                <button class="btn" type="button" id="get-btn"><i class="icon1 fa-solid fa-user-plus"></i>GetAll</button>
+                <button class="btn" type="button" id="get-btn"><i
+                        class="icon1 fa-solid fa-user-plus"></i>GetAll</button>
             </div>
         </form>
     </section>

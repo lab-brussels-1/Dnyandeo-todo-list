@@ -1,13 +1,13 @@
 import { INPUT_NAME, INPUT_EMAIL, INPUT_PHONE } from "../data/constant.js";
-import{urlApi} from "../Api/api.js"
+import { urlApi } from "../Api/api.js"
 export const updateInfo = async (id) => {
     try {
-        // const userName = document.getElementById(INPUT_NAME)
-        // const userEmail = document.getElementById(INPUT_EMAIL)
-        // const userPhone = document.getElementById(INPUT_PHONE)
+        const userName = document.getElementById(INPUT_NAME).value
+        const userEmail = document.getElementById(INPUT_EMAIL).value
+        const userPhone = document.getElementById(INPUT_PHONE).value
 
         const res = await fetch(`${urlApi}/${id}`, {
-            method: 'POST',
+            method: 'PUT',
             headers: {
                 'Content-type': 'application/json',
             },
@@ -16,7 +16,7 @@ export const updateInfo = async (id) => {
         if (res.status == 200) {
             const data = await res.json();
             userComponent(data);
-        }else{
+        } else {
             console.log(`Something went wrong, Status code:${res.status}`)
         }
     } catch (error) {
