@@ -1,5 +1,11 @@
-import { INPUT_NAME, INPUT_EMAIL, INPUT_PHONE } from "../data/constant.js";
-import { urlApi } from "../Api/api.js"
+import { INPUT_NAME, INPUT_EMAIL, INPUT_PHONE, ADD } from "../data/constant.js";
+import { urlApi } from "../Api/api.js";
+
+
+const add = document.getElementById(ADD);
+
+
+
 export const updateInfo = async (id) => {
     try {
         const userName = document.getElementById(INPUT_NAME).value
@@ -15,7 +21,7 @@ export const updateInfo = async (id) => {
         });
         if (res.status == 200) {
             const data = await res.json();
-            userComponent(data);
+            updateData(data);
         } else {
             console.log(`Something went wrong, Status code:${res.status}`)
         }
@@ -23,3 +29,9 @@ export const updateInfo = async (id) => {
         console.log(error)
     }
 };
+
+const updateData = async (data) => {
+    let info = data;
+    add.innerText = 'add'
+    userComponent(info);
+}

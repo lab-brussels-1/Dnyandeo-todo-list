@@ -70,4 +70,6 @@ export const userComponent = (data) => {
         update.innerHTML = 'Update'
         updateInfo(data.id);
     })
+
+    
 }
