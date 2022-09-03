@@ -1,10 +1,10 @@
 import { removeUser } from "../handlers/delete-user.js"
 import {updateInfo} from "../handlers/edit-user.js"
 import { INPUT_NAME, INPUT_EMAIL, INPUT_PHONE, OUTPUT, MOUSE_CLICK, ADD } from "../data/constant.js";
-
+const update = document.getElementById(ADD);
 // create element throw DOM
 
-const update = document.getElementById(ADD);
+
 
 export const userComponent = (data) => {
     const userOut = document.getElementById(OUTPUT);
@@ -68,8 +68,6 @@ export const userComponent = (data) => {
         const userPhone = document.getElementById(INPUT_PHONE)
         userPhone.value = data.phone
         update.innerHTML = 'Update'
-        updateInfo(data.id);
+        updateInfo(data)
     })
-
-    
 }
