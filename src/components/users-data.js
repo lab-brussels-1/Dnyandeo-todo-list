@@ -56,7 +56,7 @@ export const userComponent = (data) => {
 
     deleteBtn.addEventListener(MOUSE_CLICK, () => {
         removeUser(data.id)
-        UserInfo.remove();    
+        container.remove();    
     });
 
     editBtn.addEventListener(MOUSE_CLICK, ()=>{
